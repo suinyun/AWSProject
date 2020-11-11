@@ -9,8 +9,6 @@ if __name__ == "__main__":
     parser.add_argument("value")
     args = parser.parse_args()
     field = args.field
-    if field == "ID":
-        print ('Yes')
     value = args.value
     url = 'https://ni5m1df3eg.execute-api.us-east-1.amazonaws.com/test/pii-metadata?'
     urlNargs = url+field+"="+value
